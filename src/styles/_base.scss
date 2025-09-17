@@ -1,6 +1,7 @@
 // src/styles/_base.scss
 
 /* CSS Reset — modern (Eric Meyer + prilagođeno) */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 *,
 *::before,
 *::after {
@@ -12,8 +13,9 @@
 html,
 body {
   height: 100%;
-  font-family: system-ui, sans-serif;
+  width: 100%;
   line-height: 1.5;
+  font-family: 'Red Hat Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
@@ -44,4 +46,9 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+
+.container {
+    max-width: 1920px;
 }

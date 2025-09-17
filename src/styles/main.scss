@@ -1,2 +1,5 @@
 @use './base';
+@use './variables';
 @use './typography';
+@use './pages/home/home';
+@use './components/nav';

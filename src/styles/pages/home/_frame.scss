@@ -1,0 +1,112 @@
+@use '../../variables' as *;
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    border: 2px #df6e32;
+    border-style: solid;
+    background: rgba($color: #000000, $alpha: .05);
+    z-index: 2;
+    transform: translate(-50%, -50%);
+
+
+    &__corner-1, &__corner-2, &__corner-3, &__corner-4 {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+
+        &--name {
+            position: absolute;
+            color: #FFF;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__corner-1 {
+        background-color: transparent;
+        top: -2px;
+        left: -2px;
+        border-top: 2px $secondary-color-match solid;
+        border-left: 2px $secondary-color-match solid;
+
+        &--name {
+            left: 40px;
+        }
+    }
+
+    &__corner-2 {
+        right: -2px;
+        top: -2px;
+        background-color: transparent;
+        border-top: 2px $secondary-color-match solid;
+        border-right: 2px $secondary-color-match solid;
+
+        &--name {
+            right: 40px;
+        }
+    }
+
+    &__corner-3 {
+        bottom: -2px;
+        left: -2px;
+        background-color: transparent;
+        border-bottom: 2px $primary-color-match solid;
+        border-left: 2px $primary-color-match solid;
+
+        &--name {
+            left: 40px;
+        }
+    }
+
+    &__corner-4 {
+        bottom: -2px;
+        right: -2px;
+        background-color: transparent;
+        border-bottom: 2px $primary-color-match solid;
+        border-right: 2px $primary-color-match solid;
+
+        &--name {
+            right:  40px;
+        }
+    }
+
+
+    
+    .two-lines-horisontal {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .horisontal-line-1 {
+            width: 30%;
+            background: rgb(0, 0, 0);
+            // background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(255, 147, 147, 0.26934523809523814) 40%, rgba(255, 255, 255, 1) 100%);
+            background: linear-gradient(270deg, rgba(0, 0, 0, .25) 0%, rgba(223, 110, 50, 0.26934523809523814) 40%, rgba(223, 110, 50, 1) 100%);
+            height: 5px;
+        }
+
+        .horisontal-line-2 {
+            width: 30%;
+            background: rgb(255, 255, 255);
+            // background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 147, 147, 0.26934523809523814) 60%, rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(270deg, rgba(223, 110, 50, 1) 0%, rgba(255, 147, 147, 0.26934523809523814) 60%, rgba(0, 0, 0, .25) 100%);
+            height: 5px;
+        }
+    }
+
+}
+
+
+

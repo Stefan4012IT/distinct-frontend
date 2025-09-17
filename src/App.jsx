@@ -1,16 +1,15 @@
-import { useState } from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import './styles/main.scss';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <div className="app">
-      <h1>Distinct React + SCSS Setup</h1>
-    </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
