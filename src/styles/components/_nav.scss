@@ -18,14 +18,19 @@
     gap: 2.5rem;
     position: relative;
     z-index: 100;
+    color: #000;
+
+    &:hover {
+      color: #FFF;
+    }
 
     .menu-item {
       position: relative;
 
       .menu-label {
         font-size: 1.1rem;
-        font-weight: 200;
-        color: #FFF;
+        font-weight: 400;
+        color: inherit;
         cursor: pointer;
 
         &::after {
@@ -44,6 +49,8 @@
         &:hover::after {
             transform: scaleX(1);
         }
+
+        
 
       }
 
