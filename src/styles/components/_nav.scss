@@ -6,6 +6,10 @@
   align-items: center;
   padding: 2rem 3rem;
 
+  &:has(.submenu-overlay) .menu-item {
+    color: #FFF;
+  }
+
   .logo-box img {
     position: relative;
     height: 40px;
@@ -29,7 +33,7 @@
 
       .menu-label {
         font-size: 1.1rem;
-        font-weight: 400;
+        font-weight: 500;
         color: inherit;
         cursor: pointer;
 
@@ -85,13 +89,19 @@
           font-weight: 400;
 
           &:hover {
-            text-decoration: underline;
+            // text-decoration: underline;
           }
         }
       }
 
+
+
       &.active .submenu-list {
         display: flex;
+      }
+
+      &.active .menu-item {
+        color: #FFF !important;
       }
     }
   }
